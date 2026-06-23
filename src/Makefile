@@ -1,25 +1,24 @@
-.PREFIX:
-.PREFIX: .z80 .rel
+# TAGET is either z8e (Z80) or 18e (HD64180)
+TARGET = z8e
 
-SRCS = z8e.z80
+# CFG is $(TARGET)1.inc (one terminal) or $(TARGET)2.inc (separate debug terminal)
+CFG = $(TARGET)1.inc
 
-all: z8e.z80
-	cp 18e1.inc config.inc
-	zxcc m80 -"=z8e.z80"
-	zxcc l80 -"z8e,z8e/n/y/e"
-	mv z8e.com 18e1.com
-	cp 18e2.inc config.inc
-	zxcc m80 -"=z8e.z80"
-	zxcc l80 -"z8e,z8e/n/y/e"
-	mv z8e.com 18e2.com
-	cp z8e1.inc config.inc
-	zxcc m80 -"=z8e.z80"
-	zxcc l80 -"z8e,z8e/n/y/e"
-	mv z8e.com z8e1.com
-	cp z8e2.inc config.inc
-	zxcc m80 -"=z8e.z80"
-	zxcc l80 -"z8e,z8e/n/y/e"
-	mv z8e.com z8e2.com
+SRC = z8e.z80
 
+COM = $(TARGET).com
+LST = $(TARGET).lst
+
+
+all: $(COM)
+
+
+$(COM): $(SRC) $(INC) Makefile
+	@rm -f config.inc
+	@ln -s $(CFG) config.inc
+	zx80asm $(TARGET)/as
+
+
+.PHONY: clean
 clean:
-	rm -f *.com *.rel *.prn *.sym core *~
+	rm -f $(COM) $(LST)

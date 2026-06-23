@@ -259,8 +259,8 @@ false	equ	0
 ; below then make up a new equate for it.
 
 ZASMB	equ	false		;Cromemco CDOS macro assembler
-M80	equ	true		;Microsoft's Macro-80
-SLR	equ	false 		;SLR's lightning-fast Z80ASM assembler
+M80	equ	false		;Microsoft's Macro-80
+SLR	equ	true 		;SLR's lightning-fast Z80ASM assembler
 				;(or the Z180 version)
 
 ; It used to be the case that there was no real distinction between M80
@@ -7393,7 +7393,7 @@ bksp00:	ld	a,bs
 	jp	ttyo
 
 
-asci:	and	7fh		;Convert contents of accumulator to ascii   
+asci:	and	7fh		;Convert contents of accumulator to ascii
     if	hazeltine		;Hazeltine terminal?
 	cp	tilde		;	check for tilde or del
 	jr	nc,asci00	;	yes - translate to '.'

@@ -1996,14 +1996,14 @@ or   *J   #
 
                "/"  Slash  informs  Z8E not to trace any  subrou-
                     tines at all.
-         
+
                "*"  Asterisk informs Z8E not to trace any subrou-
                     tine  calls to addresses located in the range 
                     0 to FF.  This feature is intended to  screen 
                     out  calls  to location 5 (BDOS) in order  to 
                     prevent  Z8E's  and  the  user's  stack  from 
                     becoming hopelessly entangled.
-               
+
           ARG2 represents an optional timeout paramter which   affects 
           the  speed at which instructions are executed.  This  number 
           may  be  in  the range 0 - 255,  with 10  (decimal)  as  the 
@@ -2233,7 +2233,7 @@ which already resides in memory with input from a file on disk, for example
 
 
                                   - 32 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 in modifying a BIOS in preparation for MOVCPM. While this is possible  with 
@@ -2300,7 +2300,7 @@ data needed to accomplish the overlay.
 
 
                                   - 33 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 M    Move Memory
@@ -2367,7 +2367,7 @@ the overwriting of the destination data block:
 
 
                                   - 34 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 N    Output to I/O Ports rithout pre-read
@@ -2434,7 +2434,7 @@ When  writing to a Z180/HD64180 port, Z8E first clears the B register,  places
 
 
                                   - 35 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 the port number in the C register, points HL to a buffer internal to Z8E  con-
@@ -2501,7 +2501,7 @@ I/O port.
 
 
                                   - 36 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 O    Output Current Breakpoints to Console
@@ -2568,7 +2568,7 @@ breakpoint address with which they are associated.
 
 
                                   - 37 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 P    Examine/Modify PSW (Flag Register)
@@ -2635,7 +2635,7 @@ If an invalid flag bit mnemonic is entered Z8E prints a question mark.
 
 
                                   - 38 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 Q    Query I/O Ports
@@ -2702,7 +2702,7 @@ Command options once a byte has been read from the I/O port are as follows:
 
 
                                   - 39 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
           port. Z8E will continously read the  selected input port and 
@@ -2769,7 +2769,7 @@ accessing an I/O port.
 
 
                                   - 40 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 R    Examine/Modify Register Contents
@@ -2836,7 +2836,7 @@ is waiting for a register mnemonic.
 
 
                                   - 41 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 S    Single Step
@@ -2903,7 +2903,7 @@ between  the  time  the  "S" is typed and the <cr>  is  entered  by  simply
 
 
                                   - 42 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 omitting  an argument and typing <cr>. If you change your mind you can  use 
@@ -2970,7 +2970,7 @@ each iteration of a DJNZ $ instruction.
 
 
                                   - 43 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 T    Select Debug Terminal
@@ -3037,7 +3037,7 @@ result in a "locked up" computer which must be re-booted.
 
 
                                   - 44 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 U    Write Symbol Table to Disk
@@ -3104,7 +3104,7 @@ If a file with the name ARG1 already exists on disk it will be deleted.
 
 
                                   - 45 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 V    Verify two memory blocks
@@ -3171,7 +3171,7 @@ keyboard.
 
 
                                   - 46 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 W    Write Memory to a file
@@ -3238,7 +3238,7 @@ memory address as the writing to disk takes place.
 
 
                                   - 47 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 X    Display Machine State
@@ -3305,7 +3305,7 @@ To inspect the I or R registers use the R command.
 
 
                                   - 48 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 Y    Fill Memory
@@ -3372,7 +3372,7 @@ if that byte is not 77.
 
 
                                   - 49 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 Z    Disassemble
@@ -3439,7 +3439,7 @@ Z8E outputs to the console using the following format:
 
 
                                   - 50 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 
@@ -3506,7 +3506,7 @@ format:
 
 
                                   - 51 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
         C                    CODE             EX     DE,HL
@@ -3573,7 +3573,7 @@ If  during  disassembly, Z8E encounters data which cannot  be  disassembled
 
 
                                   - 52 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 into a valid Z80 instruction it will display the data as DEFBs.
@@ -3640,7 +3640,7 @@ into a valid Z80 instruction it will display the data as DEFBs.
 
 
                                   - 53 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 ?    Evaluate Expression
@@ -3707,7 +3707,7 @@ commands.
 
 
                                   - 54 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 >    Change user number
@@ -3774,7 +3774,7 @@ from user areas other than the one from which Z8E was invoked.
 
 
                                   - 55 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
                 APPENDIX A - FILE FORMAT FOR SYMBOL TABLES
@@ -3841,7 +3841,7 @@ The unique characteristics of each are:
 
 
                                   - 56 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
     MACRO-80  V3.44
@@ -3908,7 +3908,7 @@ The unique characteristics of each are:
 
 
                                   - 57 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
           symbol name if MAXLEN is set to 14 or the first 6 characters 
@@ -3975,7 +3975,7 @@ NOTE:
 
 
                                   - 58 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
                        APPENDIX B - ZILOG MNEMONICS
@@ -4042,7 +4042,7 @@ NOTE:
 
 
                                   - 59 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 
@@ -4109,7 +4109,7 @@ NOTE:
 
 
                                   - 60 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   01CF    CB 6E                BIT   5,(HL)
@@ -4176,7 +4176,7 @@ NOTE:
 
 
                                   - 61 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 
@@ -4243,7 +4243,7 @@ NOTE:
 
 
                                   - 62 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   027E    ED 50                IN   D,(C)
@@ -4310,7 +4310,7 @@ NOTE:
 
 
                                   - 63 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 
@@ -4377,7 +4377,7 @@ NOTE:
 
 
                                   - 64 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 
@@ -4444,7 +4444,7 @@ NOTE:
 
 
                                   - 65 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   039E    2A 123F              LD   HL,(NNNN)
@@ -4511,7 +4511,7 @@ NOTE:
 
 
                                   - 66 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
 
@@ -4578,7 +4578,7 @@ NOTE:
 
 
                                   - 67 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   0449    DD CB 36 96          RES   2,(IX+INDEX)
@@ -4645,7 +4645,7 @@ NOTE:
 
 
                                   - 68 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   04C5    FD CB 36 BE          RES   7,(IY+INDEX)
@@ -4712,7 +4712,7 @@ NOTE:
 
 
                                   - 69 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   0522    CB 1F                RR   A
@@ -4779,7 +4779,7 @@ NOTE:
 
 
                                   - 70 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   056F    DD CB 36 C6          SET   0,(IX+INDEX)
@@ -4846,7 +4846,7 @@ NOTE:
 
 
                                   - 71 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   05EB    FD CB 36 EE          SET   5,(IY+INDEX)
@@ -4913,7 +4913,7 @@ NOTE:
 
 
                                   - 72 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
   0667    CB 3F                SRL   A
@@ -4980,7 +4980,7 @@ NOTE:
 
 
                                   - 73 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
                  APPENDIX C - Hitachi HD64180 Instructions
@@ -5047,7 +5047,7 @@ assemble Z180 source files generated from a Z8E disassembly.
 
 
                                   - 74 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
                       APPENDIX D - SYSTEM MEMORY MAP
@@ -5114,7 +5114,7 @@ the comparison is fair.
 
 
                                   - 75 -
-        X  file the user should first load the file with the CP/M  LOAD  command 
+        Z8E REFERENCE MANUAL v 4.1 - February 2015
 
 
                        APPENDIX D - COMMAND SUMMARY
